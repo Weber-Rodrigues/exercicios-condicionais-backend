@@ -1,5 +1,5 @@
 //valor do produto comprado.
-const valorDoProduto = 10000;
+const valorDoProduto = 100000;
 
 //quantidade de parcelas
 const quantidadeDoParcelamento = 10;
@@ -7,11 +7,8 @@ const quantidadeDoParcelamento = 10;
 //valor pago
 const valorPago = 300;
 
-let quantidadeDeParcelasPagas = 3;
-let valorDasParcelas =
-  (valorDoProduto / quantidadeDoParcelamento) * quantidadeDeParcelasPagas;
-let restanteAPagar = valorDoProduto - valorDasParcelas;
-let parcelasAtuais = quantidadeDoParcelamento - quantidadeDeParcelasPagas;
-let valorApagar = restanteAPagar / parcelasAtuais;
+let valorParcelamentoEmReais = (valorDoProduto / quantidadeDoParcelamento) / 100;
+let parcelasPagas = valorPago / valorParcelamentoEmReais;
 
-console.log(`Restam ${parcelasAtuais} parcelas no valor de R$ ${valorApagar}`);
+console.log(` Restam ${parcelasPagas} parcelas de ${valorParcelamentoEmReais.toFixed(2)} Reais`);
+
