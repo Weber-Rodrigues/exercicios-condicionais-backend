@@ -1,3 +1,5 @@
+// Corrigida
+
 const idade = 30;
 const possuiPatologia = true;
 const altura = 180;

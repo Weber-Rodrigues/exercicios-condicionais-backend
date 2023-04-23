@@ -1,12 +1,13 @@
+// Corrigido
+
 const primeiroNome = "Weber";
 const sobrenome = "Rodrigues";
-const apelido = "";
+const apelido = "Binho";
 
-if (primeiroNome && !sobrenome && !apelido) {
-  console.log(primeiroNome);
-} else if (sobrenome && primeiroNome && !apelido) {
-  let nomeCompleto = primeiroNome + " " + sobrenome;
-  console.log(nomeCompleto);
-} else if (apelido && primeiroNome && sobrenome) {
+if (apelido) {
   console.log(apelido);
+} else if (sobrenome) {
+  console.log(`${primeiroNome} ${sobrenome}`);
+} else {
+  console.log(primeiroNome);
 }

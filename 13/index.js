@@ -1,16 +1,20 @@
+// Corrigido
+
 //tipo de pagamento (dinheiro, credito, debito, cheque).
 const tipoDePagamento = "credito";
 
 //valor da mercadoria (centavos)
 const valorDoProduto = 13000;
 
+let valorComDesconto = 0;
+
 if (tipoDePagamento === "credito") {
-  let valorDoCredito = valorDoProduto - valorDoProduto * 0.05;
-  console.log(`O valor a ser pago é ${valorDoCredito} Reais`);
+  valorComDesconto = (valorDoProduto * 95) / 100;
 } else if (tipoDePagamento === "cheque") {
-  let valorDoCheque = valorDoProduto - valorDoProduto * 0.03;
-  console.log(`O valor a ser pago é ${valorDoCheque} Reais`);
-} else if (tipoDePagamento === "debito" || tipoDePagamento === "dinheiro") {
-  let valorDoDebito = valorDoProduto - valorDoProduto * 0.1;
-  console.log(`O valor a ser paga é ${valorDoDebito} Reais`);
+  valorComDesconto = (valorDoProduto * 97) / 100;
+} else {
+  valorComDesconto = (valorDoProduto * 90) / 100;
 }
+console.log(
+  `O valor a ser paga é ${(valorComDesconto / 100).toFixed(2)} Reais`
+);

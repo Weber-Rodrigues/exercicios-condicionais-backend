@@ -1,3 +1,5 @@
+// Corrigido
+
 const diaDaSemana = 10;
 
 if (diaDaSemana === 1) {

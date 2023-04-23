@@ -1,4 +1,6 @@
-const caractere = 1;
+// Corrigido
+
+const caractere = "B";
 
 if (
   caractere === "A" ||
@@ -30,5 +32,5 @@ if (
 ) {
   console.log("Número");
 } else {
-  console.log(Consoante);
+  console.log("Consoante");
 }
