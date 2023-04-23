@@ -1,3 +1,5 @@
+// Código corrigido
+
 const alturaEmCm = 179;
 
 if (alturaEmCm >= 180) {

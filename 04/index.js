@@ -1,3 +1,5 @@
+// Código corrigido
+
 const ladoA = 4;
 const ladoB = 3;
 

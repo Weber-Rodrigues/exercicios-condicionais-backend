@@ -1,3 +1,5 @@
+// Código corrigido
+
 const alturaEmCm = 190;
 const alturaMinima = 180;
 

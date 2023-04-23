@@ -1,3 +1,5 @@
+// Código corrigido
+
 const jogada1 = 5;
 const jogada2 = 3;
 

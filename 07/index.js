@@ -1,3 +1,5 @@
+// Corrigido
+
 const aposentada = false;
 const portadoraDeDoenca = true;
 const totalDeRendimentos = 3000000; // emCentavos
